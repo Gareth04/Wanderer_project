@@ -1,0 +1,73 @@
+<app-sec-header></app-sec-header>
+<section>
+    <div class="perfil-info">
+        <div class="user-perfil-image">
+            <i class='bx bxs-user'></i>
+        </div>
+        <form action="#">
+            <div class="perfil-user-conte">
+                <div class="form-item-presentacion">
+                    <label for="nombre">Facturación </label>                </div>
+                <div class="form-item">
+                    <label for="nombre">Nombre completo: </label>
+                    <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre">
+                </div>
+                <div class="form-item">
+                    <label for="email">Correo Electronico: </label>
+                    <input type="text" id="email" name="email" [(ngModel)]="correo">
+                </div>
+                <div class="form-item">
+                    <label for="precio">Precio</label>
+                    <input type="text" class="precio" id="precio"  name="precio" [(ngModel)]="precio">
+                    <button type="button" (click)="openPopup()"> Método de pago</button>
+                </div>
+                <div class="form-item">
+                    <label for="lugar">Lugar de visita </label>
+                    <input type="text" id="lugar" name="lugar" [(ngModel)]="lugar">                    
+                </div>
+                <div class="form-item">
+                    <label for="fecha">Fecha: </label>
+                    <input type="text" id="fecha" name="fecha" [(ngModel)]="fecha_act">
+                </div>
+                <div class="align-button">
+                    <button type="button" (click)="generarCompra()"> Generar compra </button> 
+                </div>
+        </div>
+        </form>
+    </div>
+    <div class="perfil-card">
+        <div class="label-resumen">
+            <label>Resumen </label>
+
+        </div>
+        <table class="table table-resumen">
+                <tr class="Precio">
+                    <td>Guayaquil</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr class="Iva">
+                    <td>Iva 12%</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr class="Total">
+                    <td>Total</td>
+                    <td>$0.00</td>
+                </tr>
+        </table>
+    </div> 
+    <div class="popup" id="popup"> 
+        <form class="transition">
+            <h2>Metodo de pago</h2>
+            <div class="radioseleccion">
+                <input type="radio" name="pago" id="credito" [(ngModel)]="metodo" value="credito">
+                <label for="credito">Tarjeta de Crédito</label><br>
+                <input type="radio" name="pago" id="debito" [(ngModel)]="metodo" value="debito">
+                <label for="debito">Tarjeta de Débito</label><br>
+                <input type="radio" name="pago" id="paypal" [(ngModel)]="metodo" value="paypal">
+                <label for="paypal">Paypal</label>
+            </div>
+            <button (click)="closePopup(metodo)">Aceptar</button>
+        </form>   
+    </div>   
+</section>
+<app-footer></app-footer>

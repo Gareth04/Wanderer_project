@@ -1,0 +1,351 @@
+section{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #FAFAFA;
+}
+section .perfil-info{
+    width: 830px;
+    margin-top: 5%;
+    margin-left: 60px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+    color: #49525E;
+    border-radius: 8px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+.perfil-info  .user-perfil-image{
+    width: 70px;
+    height: 70px;
+    margin-left: 0px;
+    margin-top: -60px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #49525E;
+    color: #FAFAFA;
+    font-size: 30px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+.perfil-info .user-perfil-image i{
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #49525E;
+    color: #FAFAFA;
+    font-size: 30px;
+}
+.perfil-info form .perfil-user-conte{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between; 
+    height: 100%;
+    margin-top: 20px;
+}
+.perfil-info .perfil-user-conte .form-item-presentacion{
+    margin-left:  13%;
+    margin-top: -4%;
+    font-family: 'Lato';
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #717789;
+}
+
+form .perfil-user-conte .form-item {
+    margin: -5px 0px 8px 0px;
+    width:  100%;
+    font-family: 'Lato';
+    font-weight: 300;
+    color: #717789;
+    justify-content: space-between;
+}
+.perfil-info .perfil-user-conte .form-item label{
+    padding-right: 10px;
+    display: block;  
+
+}
+.perfil-info .perfil-user-conte .form-item input{
+    height: 45px; 
+    width: 100%;
+    border: none ;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-bottom: solid #C1C2CA;
+    background-color: #FAFAFA;
+
+}
+.perfil-info .perfil-user-conte .form-item .passwd{
+    height: 45px; 
+    width: 80%;
+    border: none ;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-bottom: solid #C1C2CA;
+    background-color: #FAFAFA;
+
+}
+.perfil-info .perfil-user-conte .form-item button{
+    margin-left: 60px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #49525E;
+    color: #EEEEEE;
+}
+.perfil-info .perfil-user-conte .form-item button:hover{
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+} 
+.perfil-info .perfil-user-conte .align-button {
+    margin-top: 10px;
+    height: 45px; 
+    width: 100%;
+    text-align: right;
+    color: #FAFAFA;
+}
+.perfil-info .perfil-user-conte .align-button button{
+    border: none;
+    background: #49525E;
+    color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+.perfil-info .perfil-user-conte button:hover{
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+} 
+/* Seccion card */
+section .perfil-card{
+    margin-left: 50px;
+    width: 350px;
+    height: 335px;
+    background-color: #49525E;
+    border-radius: 8px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+/* Seccion card destino */
+section .perfil-card-destino{
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 100%;
+    height: 10%;
+    background-color: #EEEEEE;
+    border-radius: 8px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+section .perfil-card-destino .namecity{
+    height: 48px;
+    width: 350px;
+    margin-top: 15px;
+    background-color: #EEEEEE;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+section .perfil-card-destino .namecity label{
+    padding: 5%;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 30px;
+    color: #717789;
+}
+section .perfil-card-destino .city{
+    height: 76px;
+    width: 30%;
+    margin-top: 15px;
+    color: #717789;
+    /* background-color: #49525E; */
+    border-radius: 8px;
+    text-align: center;
+}
+section .perfil-card-destino .city label{
+    padding: 5%;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 35px;
+    
+}
+section .perfil-card-destino .city-button button{
+    border: none;
+    cursor: pointer;
+    width: 400px;
+    height: 76px;
+    border-radius: 3px;
+    background-color: #49525E;
+    color: #EEEEEE;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 25px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+.popup{
+    width: 600px;
+    height: 750px;
+    position:absolute;
+    top: 0;
+    left: 81%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding:  0 30px 30px;
+    background: #1C1C1C;
+    background-size: cover;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup .logo{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.popup .logo i{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: 'Berkshire Swash';
+    cursor: pointer;
+}
+.popup .logo a{
+    font-size: 55px;
+    color: #EEEEEE;
+    font-family: 'Berkshire Swash';
+}
+.popup .transition{
+    margin-top: 0%;
+    margin-left: -7px;
+    height: 550px;
+    width: 620px;
+    background-image: url('/assets/images/montañita3.PNG');
+    background-size: cover;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: 'Lato';
+}
+.popup .transition input[type='password']{
+        border: 0.5px solid #49525E;
+        height: 45px;
+        padding: 0 2rem;
+        width: 80%;
+        outline: none;
+        transition: background .5s;
+        font-size: 18px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+}
+.popup .transition h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+.popup .transition textarea{
+    margin-top: 35px;
+    width: 90%;
+    height: 350px;
+    font-size: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-width: none;
+    border-style: none; 
+    color: #1C1C1C;
+    font-family: Lato;
+    font-weight: 300;
+}
+.popup button{
+    margin-top: 40px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 205px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+.open-popup{
+    visibility: visible;
+    top: 48%;
+    transform: translate(-50%, -50%) ;
+}
+
+@media screen and (min-width: 1024px){
+    section .perfil-info{
+        margin-bottom: 10%;
+    }
+    section .perfil-card{
+        margin-top: 0%;
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    section .perfil-info{
+        margin-bottom: 10%;
+    }
+    section .perfil-card{
+        margin-bottom: 10%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 767px){
+    section .perfil-info{
+        margin-left: 0px;
+        margin-bottom: 10%;
+    }
+    section .perfil-card{
+        margin-bottom: 10%;
+    }
+}
+/* @media(max-width:992px){
+    section{
+        height: auto;
+        background-color: #EEEEEE;
+    }
+    .perfil-info{
+        justify-content: center;
+        
+    }
+    section .perfil-info{
+        
+        margin-left: 10px;
+        
+    }
+    section .perfil-card{
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    section .perfil-card-destino{
+        margin-top: 10%;
+        justify-content: center;
+    }
+} */

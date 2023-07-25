@@ -1,0 +1,179 @@
+/* Registro page */
+.user-perfil-header {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-family: 'Berkshire Swash';
+    background-color: #49525E;
+    
+} 
+.user-perfil-header a{
+    margin-right: 30px;
+    font-size: 45px;
+    text-decoration: none;
+    font-family: 'Berkshire Swash';
+    color: #fff;
+}
+.registro_info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+    color: #fff;
+}
+.registro_info .registro_info_conte{
+    width: 632px;
+    height: 805px;
+    background-color: #FAFAFA;
+    font-family: Lato;
+    text-align: left;
+    color: #303030;
+}
+.registro_info .registro_info_conte .registro-header{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.registro_info .registro_info_conte .registro-header a{
+    font-size: 45px;
+    font-family: 'Berkshire Swash';
+    color: #303030;
+    text-decoration: none;
+}
+
+.registro_info .registro_info_conte .registro-header h1{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+.registro_info .registro_info_conte .form-item{
+    display: block;
+    margin-left: 65px;
+    /* margin-bottom: 30px; */
+    align-items: right;
+    font-size: 18px;
+    font-weight: bold;
+} 
+.registro_info .registro_info_conte .form-item label{
+    display: block;
+    margin-left: 20px;
+    align-items: left;
+    font-size: 18px;
+} 
+.registro_info .registro_info_conte hr{
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.registro_info .registro_info_conte button{
+    margin-top: 10px;
+    margin-left: 45px;
+    border: none;
+    background: #49525E;
+    color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+    width: 85%;
+}
+.registro_info .registro_info_conte input[type='text'],
+.registro_info .registro_info_conte input[type='password']{
+    border: 0.5px solid #49525E;
+    height: 45px;
+    padding: 0 2rem;
+    width: 80%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.registro_info .registro_info_conte .footer {
+    margin-top: 15px;
+    font-family: 'Lato';
+    font-weight: 700;
+    text-align: center;
+}
+.registro_info .registro_info_conte .footer a{
+    color: #3F4C8A;
+    text-decoration: none;
+}
+.registro_info div img{
+    width: 910px;
+    height: 805px;
+    background: var(--i);
+    background-size: cover;
+    max-width: 100%;
+      max-height: none;
+}
+.registro_info .contenido h2{
+    font-family: Lato;
+    font-size: 40px;
+}
+.registro_info .contenido p{
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5rem;
+}
+.registro_info .contenido{
+    position: absolute;
+    margin-top: -810px;
+    width: 910px;
+    height: 810px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    transition:  1s;
+    max-width: 100%;
+      max-height: none;
+}
+.registro_info .card:hover .contenido{
+    opacity: 1;
+}
+.perfil-info{
+    justify-content: center;
+}
+.perfil-info .perfil-card{
+    margin-right: -60px;
+}
+@media (max-width: 1360px){ 
+    .registro_info{
+        justify-content: space-between;
+    }
+    .registro_info div img{
+        width: 685px;
+    }
+    .registro_info .contenido{
+        width: 685px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .registro_info{
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .registro_info{
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 767px){
+    .registro_info{
+        justify-content: center;
+    }
+}

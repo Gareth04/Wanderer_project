@@ -1,0 +1,46 @@
+.card_info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
+}
+
+.card_info div img{
+    width: 330px;
+    height: 550px;
+    padding: 10px;
+    background: var(--i);
+    background-size: cover;
+    /* box-shadow: 3px 5px 5px rgba(3,32,51,.8); */
+} 
+.card_info .contenido h2{
+    font-family: Lato;
+    font-size: 40px;
+}
+.card_info .contenido p{
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+}
+.card_info .contenido{
+    position: absolute;
+    margin-top: -545px;
+    margin-left: 10px;
+    width: 310px;
+    height: 530px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    transition:  1s;
+}
+.card:hover .contenido{
+    opacity: 1;
+}

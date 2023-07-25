@@ -1,0 +1,45 @@
+//Esto usare para los destinos
+
+        //[HttpGet("{correo}")]
+        //public async Task<IActionResult> ObtenerUsuarioPorNombre(string correo)
+        //{
+        //    try
+        //    {
+        //        // Aquí realizas la lógica para obtener los datos del usuario por su nombre
+        //        var usuario = await usuarioServices.ObtenerUsuarioPorNombre(correo);
+
+        //        if (usuario == null)
+        //            return NotFound();
+
+        //        return Ok(usuario);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
+
+
+        //Obtencion total de los usuarios
+        //[HttpGet]
+        //public async Task<IActionResult> ListaUsuarios()
+        //{
+        //    var usuario = await usuarioServices.ListaUsuario();
+        //    return Ok(usuario);
+        //}
+
+public async Task<Usuario> ObtenerUsuarioPorNombre(string correo)
+        {
+            try
+            {
+                // Aquí realizas la lógica para obtener los datos del usuario por su nombre
+                var usuario = await context.Usuario.FirstOrDefaultAsync(u => u.correo == correo);
+
+                return usuario;
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones, registro de errores, etc.
+                throw new InvalidOperationException("Error al obtener el usuario por correo.", ex);
+            }
+        }

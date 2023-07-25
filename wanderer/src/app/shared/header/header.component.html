@@ -1,0 +1,56 @@
+<header>
+    <!-- #Horizontal navbar -->
+    <div class="navbar">
+        <ul class="logo-info">
+            <li><div class="logo"><a href="#" >Wanderer</a></div></li>
+        </ul>
+        <ul class="links">
+            <li><a [routerLink]="[ '/homepage']">Home</a></li>
+            <li><a [routerLink]="[ '/selecDestino']">Destinos</a></li>
+            <li><a [routerLink]="[ '/perfil']">Perfil</a></li>
+            <li><a *ngIf="!Islogged; else viewLogout" [routerLink]="[ '/login']">Login</a></li>
+            <li><a (click)="openPopup()">Contactanos</a></li>
+        </ul>
+        <div class="toggle_btn" (click)="toggleBTNmenu()">
+            <i class='bx bxs-grid'></i>
+        </div>
+    </div>
+    <div class="dropdown_menu" id="dropdown">
+        <li><a [routerLink]="[ '/homepage']">Home</a></li>
+        <li><a [routerLink]="[ '/selecDestino']">Destinos</a></li>
+        <li><a [routerLink]="[ '/perfil']">Perfil</a></li>
+        <li><a 
+            *ngIf="!Islogged; else viewLogout"  [routerLink]="[ '/login']">Login</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#">Contactanos</a></li>
+    </div>
+    <div class="presentacion">
+        <p>
+            Descubre los destinos más increíbles, sumérgete en culturas fascinantes y vive experiencias inolvidables. <br>¡Comienza tu aventura ahora!
+        </p>
+    </div>
+    <div class="popup" id="popup"> 
+        <div class="logo">
+            <i class='bx bx-x' style='color:rgb(255, 255, 255)' (click)="closePopup()"></i>
+            <a href="#" >Wanderer</a>
+        </div>
+        <form class="transition" [formGroup]="nuevoForm">
+            <h2>Dejanos tus comentarios</h2>
+            <textarea rows="10" cols="40"  name="message" [(ngModel)]="comments" formControlName="comentarios" >Escribe aquí tus comentarios</textarea>
+            <button (click)="sendComments()">Enviar</button>
+        </form>   
+    </div>   
+    <div class="popup_send" id="popup_send"> 
+        <div class="image">
+            <div class="msg">
+                <label> ¡Gracias por tu comentario!</label>
+            </div> 
+
+            <div class="poputbuton" (click)="closePopupsend()"><button>Aceptar</button></div>
+        </div>
+    </div>   
+
+</header>
+<ng-template #viewLogout>
+    <a [routerLink]="[ '/login']" (click)="logOut()">Log out</a>
+</ng-template>

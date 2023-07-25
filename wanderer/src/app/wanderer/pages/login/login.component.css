@@ -1,0 +1,290 @@
+/* login-page */
+.login_info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+.login_info div img{
+    width: 890px;
+    height: 800px;
+    background: var(--i);
+    background-size: cover;
+}
+/* Sombra */
+.login_info .contenido h2{
+    font-family: Lato;
+    font-size: 40px;
+}
+.login_info .contenido p{
+    font-family: Lato;
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.5rem;
+}
+.login_info .contenido{
+    position: absolute;
+    margin-top: -800px;
+    width: 890px;
+    height: 800px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.4);
+    opacity: 0;
+    transition:  1s;
+}
+.login_info .card{
+    padding-right: 2%;
+}
+.login_info .card:hover .contenido{
+    opacity: 1;
+}
+
+.login_info .login_info_conte{
+    width: 600px;
+    height: 750px;
+    color:#49525E;
+    font-family: Lato;
+    text-align: right;
+    justify-content: center;
+    
+} 
+.login_info .login_info_conte .login-header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #49525E;
+
+}
+.login_info .login_info_conte .login-header a{
+    margin-right: 15px;
+    font-size: 55px;
+    font-family: 'Berkshire Swash';
+    color: #fff;
+    text-decoration: none;
+}
+.login_info .login_info_conte .login-header h1{
+    margin-top: 5%;
+    margin-right: 135px;
+    font-size: 45px;
+    font-family: Lato;
+    color: #fff;
+}
+/*  */
+.login_info .login_info_conte .form-item{
+    display: block;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+} 
+.login_info .login_info_conte .form-item label{
+    display: block;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #fff;
+} 
+.login_info .login_info_conte .form-item .checkbox{
+    display: flex;
+    margin-left: 70px;
+    margin-top: -50px;
+    justify-content: start;
+    color: #fff;
+}
+.login_info .login_info_conte .form-item .checkbox label{
+    padding-left: 3%;
+}
+.login_info .login_info_conte input[type='text'],
+.login_info .login_info_conte input[type='password']{
+    border: 1px solid #303030;
+    height: 45px;
+    padding: 0 2rem;
+    width: 90%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.login_info .login_info_conte button{
+    margin-top: 30px;
+    border: none;
+    background: #F8D870;
+    color: #49525E;
+    margin-right: 50px;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 55px;
+    cursor: pointer;
+    width: 80%;
+}
+.login_info .login_info_conte hr{
+    margin-left: 0%;
+    margin-right: 3%;
+}
+.footer{
+    margin-top: 20px;
+}
+.login_info_conte .footer p{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.login_info_conte .footer a{
+    margin-left: 5px;
+    font-size: 15px;
+    color: #F8D870;
+    text-decoration: none;
+}
+
+.popup{
+    width: 600px;
+    height: 750px;
+    position:absolute;
+    top: 0;
+    left: 81%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding:  0 30px 30px;
+    background: #1C1C1C;
+    background-size: cover;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup .logo{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.popup .logo i{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: 'Berkshire Swash';
+    cursor: pointer;
+}
+.popup .logo a{
+    font-size: 55px;
+    color: #EEEEEE;
+    font-family: 'Berkshire Swash';
+}
+.popup .transition{
+    margin-top: 0%;
+    margin-left: -7px;
+    height: 550px;
+    width: 620px;
+    background-image: url('/assets/images/montañita3.PNG');
+    background-size: cover;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: 'Lato';
+}
+.popup .transition input[type='text']{
+    border: 0.5px solid #49525E;
+    height: 45px;
+    padding: 0 2rem;
+    width: 80%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.popup .transition h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+.popup button{
+    margin-top: 40px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 205px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+.open-popup{
+    visibility: visible;
+    top: 48%;
+    transform: translate(-50%, -50%) ;
+}
+
+@media (max-width: 1360px){
+    .login_info{
+        justify-content: center;
+    }
+    .login_info div img{
+        width: 770px;
+        height: 800px;
+        max-width: 100%;
+      max-height: none;
+    }
+    .login_info .contenido{
+        width: 770px;
+        height: 800px;
+        max-width: 100%;
+      max-height: none;
+    }
+    .login_info .login_info_conte{
+        width: 500px;
+        height: 750px;
+        margin-right: 20px;
+    } 
+    .login_info .login_info_conte input[type='text'],
+    .login_info .login_info_conte input[type='password']{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .login_info .login_info_conte{
+        text-align: left;  
+        margin-left: 20px; 
+    }
+    .login_info .login_info_conte hr{
+        margin-left: -5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 767px){
+    selection{
+        justify-content: center;
+    }
+    .login_info{
+        justify-content: center;
+    }
+    .login_info .login_info_conte{
+        width: 100%;
+        height: 750px;
+        margin-right: -3%;  
+    } 
+    .login_info .login_info_conte hr{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}

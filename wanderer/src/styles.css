@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+/* Font 'Berkshire Swash' */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+/* Font Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FAFAFA;  
+}
+
+.custom .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #303030;
+    }
+    .custom .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+        background-color: #C1C2CA;
+        transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+    .custom .p-carousel .p-image {
+        margin-left: 10%;
+    }
+.ui-messages-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

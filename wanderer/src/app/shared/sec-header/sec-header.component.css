@@ -1,0 +1,14 @@
+.user-perfil-header {
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-family: 'Berkshire Swash';
+    background-color: #49525E;
+} 
+.user-perfil-header a{
+    margin-right: 30px;
+    font-size: 45px;
+    text-decoration: none;
+    font-family: 'Berkshire Swash';
+    color: #fff;
+}

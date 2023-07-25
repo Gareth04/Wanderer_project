@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Wanderer_backend.props" />
+</Project>

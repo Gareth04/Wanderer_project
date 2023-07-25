@@ -1,0 +1,40 @@
+<app-header></app-header>
+<body>
+    <section class="main_star">
+        <p>
+            Estás a punto de descubrir un destino lleno de aventuras y experiencias inolvidables. <br>¡Ven y sumérgete en la magia de Ecuador, un destino que te cautivará en cada paso que des!
+        </p>
+    </section>
+    <app-cards></app-cards>
+    <section class="main_star">
+        <p class="conten_logo">
+            Tú viaje,tú destino
+        </p>
+        <p>
+            Haz que tus aventuras sean especiales
+        </p>
+    </section>
+    <section>
+        <div class="main_info">
+            <div >
+                <img src="./assets/images/info_nambillo.jpeg">
+            </div>
+            <div class="main_info_conte">
+                <h1>Rio Nambillo</h1>
+                <p>Nambillo es un destino imprescindible para los amantes de la naturaleza y los aficionados a la aventura, estos ríos cristalinos serpentean entre la vegetación, creando un ambiente de serenidad y frescura. Las espectaculares cascadas de Nambillo te cautivarán con su caída de agua, ofreciendo un espectáculo natural impresionante. </p>
+            </div>
+        </div>
+    </section>
+    <p-carousel [value]="banner" class="custom"
+                [autoplayInterval]="5000" 
+                [circular]="true">
+        <ng-template let-item pTemplate="item">
+            <p-image [src]="item.image" 
+                    alt="Image" 
+                    width="80%">
+            </p-image>
+        </ng-template>
+    </p-carousel>
+    <p-messages styleClass="p-mr-2" class="ui-messages-top"></p-messages>
+</body>
+<app-footer></app-footer>

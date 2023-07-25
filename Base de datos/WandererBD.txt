@@ -1,0 +1,45 @@
+CREATE TABLE Usuario (
+    id_usuario INT IDENTITY(1,1) PRIMARY KEY,
+    nombres varchar(50)NOT NULL,
+    correo  varchar(100) NOT NULL,
+    contraseña  varchar(30)  NOT NULL,
+    ciudad  varchar(100),
+    direccion varchar2(100)
+);
+
+CREATE TABLE Login (
+    user_id int,
+    correo  VARCHAR(100) NOT NULL,
+    contraseña  varchar(30)  NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES Usuario(id_usuario)
+);
+
+CREATE TABLE Paquete (
+    id_paquete INT IDENTITY(1,1) PRIMARY KEY,
+    destino varchar(100) NOT NULL,
+    ciudad_paq  varchar(100) NOT NULL,
+    precio_paq number NOT NULL
+);
+
+CREATE TABLE factura (
+    id_factura INT IDENTITY(1,1) PRIMARY KEY,
+    user_id int,
+    paquete_id int,
+    correo  varchar(100) NOT NULL,
+    metodo varchar2(25) NOT NULL,
+    lugar  varchar2(100),
+    fecha date,
+    Precio float,
+    FOREIGN KEY (user_id) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (paquete_id) REFERENCES Paquete(id_paquete)
+);
+
+CREATE TABLE Pago (
+    id_pago INT IDENTITY(1,1) PRIMARY KEY,
+    factura_id int,
+    user_id int,
+    tipo_pago varchar(30) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES Usuario(id_usuario),
+    FOREIGN KEY (factura_id) REFERENCES factura(id_factura)
+);
+

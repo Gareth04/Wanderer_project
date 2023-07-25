@@ -1,0 +1,309 @@
+section{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #EEEEEE;
+}
+section .perfil-info{
+    width: 850px;
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-bottom: 14%;
+    padding: 25px 30px;
+    background-color: #FAFAFA;
+    color: #49525E;
+    border-radius: 8px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+.perfil-info  .user-perfil-image{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: -60px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #49525E;
+    color: #FAFAFA;
+    font-size: 30px;
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+.perfil-info .user-perfil-image i{
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #49525E;
+    color: #FAFAFA;
+    font-size: 30px;
+}
+.perfil-info form .perfil-user-conte{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between; 
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+section .perfil-card{
+    width: 350px;
+    height: 260px;
+    margin-top: -18%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #EEEEEE;
+    border-width: 5px;
+    border-color: #49525E;
+    border-style: solid;
+    border-radius: 8px;
+    font-family: 'Lato';
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+}
+
+section .perfil-card .label-resumen{
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+section .perfil-card .label-resumen{
+    font-weight: 700;
+    font-size: 25px;
+}
+.table {
+    margin-top: 20px;
+    border-collapse:collapse;
+    width: 100%;
+    justify-content: space-between;
+    height: 50%;
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+
+.perfil-info .perfil-user-conte .form-item-presentacion{
+    margin-left:  13%;
+    margin-top: -4%;
+    font-family: 'Lato';
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #717789;
+}
+
+form .perfil-user-conte .form-item {
+    margin: -5px 0px 8px 0px;
+    width:  100%;
+    font-family: 'Lato';
+    font-weight: 300;
+    color: #717789;
+    justify-content: space-between;
+    /* margin-left: 7%;
+    margin-top: 30px;
+    width: 180px;
+    height: 25px;
+    padding-right: 5px; */
+}
+.perfil-info .perfil-user-conte .form-item label{
+    padding-right: 10px;
+    /* margin-bottom: 5px; */
+    display: block;  
+
+}
+.perfil-info .perfil-user-conte .form-item input{
+    height: 45px; 
+    width: 100%;
+    border: none ;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-bottom: solid #C1C2CA;
+    background-color: #FAFAFA;
+
+}
+.perfil-info .perfil-user-conte .form-item .precio{
+    height: 45px; 
+    width: 60%;
+    border: none ;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-bottom: solid #C1C2CA;
+    background-color: #FAFAFA;
+
+}
+.perfil-info .perfil-user-conte .form-item button{
+    margin-left: 60px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    width: 205px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #49525E;
+    color: #EEEEEE;
+}
+.perfil-info .perfil-user-conte .form-item button:hover{
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+} 
+.perfil-info .perfil-user-conte .align-button {
+    margin-top: 10px;
+    height: 45px; 
+    width: 100%;
+    text-align: right;
+    color: #FAFAFA;
+}
+.perfil-info .perfil-user-conte .align-button button{
+    border: none;
+    background: #49525E;
+    color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+.perfil-info .perfil-user-conte button:hover{
+    box-shadow: -.5rem -.5rem 2rem #ccc,
+    -.5rem -.5rem 1rem #fff;
+} 
+.popup{
+    width: 820px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding:  0 30px 30px;
+    background-image: url('/assets/images/montañita3.PNG');
+    background-size: cover;
+    border-width: 2px;
+    border-color: #49525E;
+    border-style: solid;
+    border-radius: 8px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup .transition{
+    margin-top: 45px;
+    margin-left: -7px;
+    height: 250px;
+    width: 325px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: 'Lato';
+}
+.popup .transition h2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.popup button{
+    margin-top: 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: 205px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #F6D187;
+    color: #49525E;
+}
+.popup .transition .radioseleccion{
+    margin-top: 20px;
+    margin-left: 30px;
+    text-align: left;
+}
+.popup .transition .radioseleccion label{
+    display: inline-block;
+    cursor: pointer;
+    color: #212121;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.popup .transition .radioseleccion label:before{
+    content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: none;
+      border: 3px solid #49525E; 
+}
+.popup .transition .radioseleccion label:hover{
+    background: rgba(255, 65, 54, 0.1); 
+}
+.popup .transition input[type="radio"] {
+    display: none; }
+    .popup .transition input[type="radio"]:checked + label:before {
+      display: none; }
+    .popup .transition input[type="radio"]:checked + label {
+      padding: 5px 15px;
+      background: #49525E;
+      border-radius: 2px;
+      color: #fff; }
+
+
+.popup .transition .radioseleccion :hover input[type=radio]{
+    border-color: #49525E;
+    background-color: #49525E;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+@media screen and (min-width: 1024px){
+    section .perfil-card{
+        justify-content: center;
+        margin-top: -10%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    section{
+        height: auto;
+        background-color: #EEEEEE;
+    }
+    section .perfil-card{
+        margin-top: -10%;
+    }
+    .popup{
+        width: 350px;
+        height: 350px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 767px){
+    section .perfil-card{
+        margin-top: -10%;
+    }
+    .popup{
+        width: 350px;
+        height: 350px;
+    }
+}

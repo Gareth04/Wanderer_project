@@ -1,0 +1,85 @@
+<div class="destino">
+    <app-ter-header></app-ter-header>
+    <section class="main_star">
+        <p>
+            Descubre un mundo lleno de aventuras y experiencias inolvidables. ¡Elige nuestro destino y crea recuerdos para toda la vida!
+        </p>
+    </section>
+    <section>
+        <div class="main_info">
+            <div class="main_info_conte">
+                <h1>Costa Ecuatoriana</h1>
+                <p>la costa ecuatoriana se convirtió en un importante punto estratégico para el comercio y la navegación. Puertos como Guayaquil y Manta se desarrollaron como centros de intercambio comercial, atrayendo a navegantes y exploradores de diferentes partes del mundo. Estas ciudades portuarias fueron escenario de batallas y luchas por la independencia, donde figuras destacadas como Simón Bolívar dejaron su legado en la historia de Ecuador.</p>
+                <p>Ven y déjate llevar por la historia de la costa ecuatoriana, sumérgete en sus tradiciones, admira su arquitectura colonial y maravíllate con la belleza natural que ha cautivado a generaciones. Descubre un destino lleno de historia y encanto, donde cada paso te transportará a un pasado fascinante y te permitirá crear recuerdos duraderos.</p>
+            </div>
+            <div class="main_img_conte">
+                <img src="./assets/images/Montañita.jpg">
+                <img src="./assets/images/Guayaquil2.jpg">
+            </div>
+        </div>
+    </section>
+    <div class="conten-cards">
+        <div class="cards">
+            <div class="trycard">
+                <div class="trcard-img">
+                    <img class="perla" src="./assets/images/Perla.png">
+                    <img class="Guayaquildos" src="./assets/images/Guayaquildos.jpg">
+                    <img class="malecon"src="./assets/images/Malecon.jpg">                
+                </div>
+                <div class="onecard">
+                    <img src="./assets/images/Guayaquil.jpg">
+                </div>
+            </div>   
+        </div>
+        <div class="cards"> 
+            <div class="trycard">
+                <div class="seccard" >
+                    <img src="./assets/images/puesta.PNG">
+                </div>
+                <div class="trcard-img">
+                    <img class="atacames" src="./assets/images/Atacames.PNG">
+                    <img class="playa-atacames" src="./assets/images/Playa_atacames.jpg">
+                    <img class="progreso"src="./assets/images/parque-del-progreso.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="main_star">
+        <p>
+            Haz que tus aventuras sean especiales
+        </p>
+    </section>
+    <app-cards></app-cards>
+    <section class="main_star">
+        <p>
+            Estas a un solo paso de lograrlo..
+        </p>
+    </section>
+    <div class="registro-info">
+        <table class="table table-hover">
+            <thead>
+            <tr class="tabla">
+                <th scope="col">#</th>
+                <th scope="col">Destino</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Costo</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="columna" *ngFor="let paq of paquete">
+                <th scope="row">{{paq.id_paquete}}</th>
+                <td>{{paq.destino}}</td>
+                <td>{{paq.ciudad_paq}}</td>
+                <td>{{paq.precio_paq}}</td>
+                <td><button type="button"
+                        (click)="seleccionarDestino(paq)">
+                        Seleccionar
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<app-footer></app-footer>

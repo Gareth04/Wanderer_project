@@ -1,0 +1,58 @@
+<section>
+    <div class="login_info">
+        <div class="card">
+            <img  src="./assets/images/login_image.webp">
+            <div class="contenido">
+                <h2>Pailón del Diablo</h2>
+                <p>¡Descubre la majestuosidad del Pailón del Diablo en Ecuador! Ven y maravíllate con esta imponente cascada, adéntrate en su exuberante entorno natural y vive una experiencia inolvidable en contacto con la belleza de la naturaleza. ¡Te esperamos para explorar este impresionante destino turístico!</p>
+            </div>
+        </div>
+        <div class="login_info_conte">
+            <div class="login-header">
+                <a href="#" >Wanderer</a>
+                <h1>Iniciar Sesión</h1>
+            </div>
+            <div class="form-item">
+                <label for="email">Correo Electronico</label>
+                <input type="text" id="email" name="email" [(ngModel)]="log_email">
+            </div>
+            <div class="form-item">
+                <label for="psswd">Contraseña</label>
+                <input type="password" id="psswd"  name="psswd" [(ngModel)]="log_psswd">
+            </div>
+            <div class="form-item">
+                <div class="checkbox">
+                    <a (click)="openPopup()">¿Olvido su contraseña?</a>
+                </div>
+            </div>
+            <hr>
+            <button type="button"
+            (click)="login()"> Iniciar Sesión</button>
+            <div class="footer"> 
+                <p>No tienes cuenta aun?      
+                    <a  
+                        [routerLink]="['/registro']"
+                        routerLinkActive="activate"
+                        [routerLinkActiveOptions]="{exact:true}"
+                  > Sign Up</a>
+                </p>
+            </div> 
+        </div>
+    </div>
+    <h5>Message Service</h5>
+    <p-messages styleClass="p-mr-2" class="ui-messages-top"></p-messages>
+    <div class="popup" id="popup"> 
+        <div class="logo">
+            <i class='bx bx-x' style='color:rgb(255, 255, 255)' (click)="closePopup()"></i>
+            <a>Wanderer</a>
+        </div>
+        <form class="transition" >
+            <h2>Formulario de recuperación</h2>
+            <div class="form-item">
+                <label for="rec_email">Ingrese el correo electrónico registrado</label>
+                <input type="text" id="rec_email" name="rec_email" [(ngModel)]="rec_email" >
+            </div>
+            <button (click)="recuperarCuenta()">Aceptar</button>
+        </form>   
+    </div> 
+</section>

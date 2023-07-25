@@ -1,0 +1,44 @@
+<app-sec-header></app-sec-header>
+<div class="info">
+    <span>
+        Reporte de ventas
+    </span>
+</div>
+<div class="registro-info">
+    <table class="table table-hover">
+        <thead>
+          <tr class="tabla">
+            <th scope="col">ID</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Metodo</th>
+            <th scope="col">Lugar</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Costo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="columna" *ngFor="let rep of reporte" >
+            <th scope="row">{{rep.id_factura}}</th>
+            <td>{{rep.id_usuario}}</td>
+            <td>{{rep.correo}}</td>
+            <td>{{rep.metodo}}</td>
+            <td>{{rep.lugar}}</td>
+            <td>{{rep.fecha}}</td>
+            <td>{{rep.precio}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<div class="table_button">
+  <div class="return-button">
+    <button type="button" [routerLink]="[ '/perfil']">Regresar </button> 
+  </div>
+  <div class="imprimir-button">
+    <button type="button">Imprimir </button> 
+  </div>
+  <div class="descargar-button">
+    <button type="button">Descargar </button> 
+  </div>
+</div>
+<app-footer></app-footer>
